@@ -6,7 +6,7 @@ class CovidDataBase:
     def __init__(self):
         try:
             self.connection=psycopg2.connect(
-                "dbname='basededatos' user='postgres' host='localhost' password='k3v1n020299jhosepct' port='5432'")
+                "dbname='basededatos' user='postgres' host='localhost' password='********' port='5432'")
             self.connection.autocommit = True
             self.cursor = self.connection.cursor()
         except:
